@@ -1,0 +1,152 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    background-image: linear-gradient(120deg , black ,purple);
+}
+
+header,form {
+    margin: auto;
+    padding: 20px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+header {
+    color: whitesmoke;
+}
+
+.input , .todo-button {
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+
+}
+
+.todo-button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.items {
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo {
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    transition: all 0.6s ease;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.tasks {
+    padding: 0rem 0.5rem;
+}
+
+.delete-btn,.check-btn{
+    padding: 0.4rem;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.delete-btn {
+    color:  rgb(226, 17, 17);
+}
+
+.delete-btn:hover {
+    background-color: rgb(226, 17, 17);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.check-btn {
+    color: rgb(18, 150, 18);
+}
+
+.check-btn:hover {
+    background-color: rgb(18, 150, 18);
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.fa-trash , .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.filter {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: black;
+    width: 8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.filter::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: black;
+    background-color: white;
+    pointer-events: none;
+    padding: 0.4rem;
+}
+
+.filter:hover::after {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
